@@ -73,7 +73,7 @@ module Hiccup
           end
         end
 
-        add_rule("MONTHLY", :bymonthday => bymonthday) if bymonthday.any?
+        return add_rule("MONTHLY", :bymonthday => bymonthday) if bymonthday.any?
         add_rule("MONTHLY", :byday => byday) if byday.any?
       end
 
